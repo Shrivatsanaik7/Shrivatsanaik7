@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Guide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom right, #e6f0ff, #c2d8ff, #a3c4ff);
+            color: #333;
+            line-height: 1.6;
+            padding-top: 70px;
+        }
+
+        .navbar {
+            height: 60px;
+            width: 100%;
+            background: linear-gradient(to right, #1c3b5a, #3b82f6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .navc {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            cursor: pointer;
+            transition: color 0.4s ease-in-out;
+        }
+
+        .navc:hover {
+            color: #fbbf24;
+        }
+
+        .section, .small-section {
+            max-width: 1000px;
+            margin: 40px auto;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .section:hover, .small-section:hover {
+            transform: scale(1.02);
+        }
+
+        .section img, .small-section img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .section .content, .small-section .content {
+            padding: 20px;
+        }
+
+        .section .content h2, .small-section .content h2 {
+            color: #1c3b5a;
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .section .content p, .small-section .content p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #555;
+            text-align: justify;
+        }
+
+        .button {
+            display: inline-block;
+            margin: 15px auto 0;
+            padding: 10px 20px;
+            background: #3b82f6;
+            color: white;
+            border-radius: 5px;
+            font-size: 16px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: #1c3b5a;
+        }
+
+        .divider {
+            width: 80%;
+            margin: 20px auto;
+            height: 2px;
+            background: linear-gradient(to right, #3b82f6, transparent);
+            border: none;
+        }
+
+        .small-section img {
+            width: 85%;
+            margin: 20px auto;
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #1c3b5a;
+            color: white;
+            font-size: 14px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navc">Travel Guide</div>
+    </div>
+
+    <div class="section">
+        <img src="beach.jpg" alt="Apsarakonda Falls">
+        <div class="content">
+            <h2>Apsarakonda Falls</h2>
+            <p>
+                Apsarakonda Falls is a perfect destination to break free from the monotony of routine life. Set in a small village named 
+                <strong>Apsarakonda</strong> in Honnavar taluk of Uttara Kannada district of Karnataka, the waterfall possesses enthralling beauty.
+            </p>
+            <p>
+                The scenic location of the waterfall is situated near the <strong>Western coast of Karnataka</strong> and has a pristine beach 
+                in its vicinity, apart from a tall hill and a lovely pond. All these elements of nature are enough to mesmerize anyone visiting the place.
+            </p>
+            <a href="#" class="button">Explore More</a>
+        </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+        <img src="mangro.jpg" alt="Mangroves Walkway">
+        <div class="content">
+            <h2>Mangroves Walkway</h2>
+            <p>
+                A walk through this beautiful wooden walkway amidst the lush green Mangrove trees is one of the beautiful ways to enjoy nature 
+                and also helps in calming your mind. It’s the best place to spend 1 to 2 hours easily. 
+            </p>
+            <p>
+                Mangroves are always green irrespective of the season. They are salt-tolerant, help in filtering out heavy metals from water, 
+                and prevent erosion in coastal areas. This makes it an eco-friendly and relaxing experience for nature lovers.
+            </p>
+            <a href="#" class="button">Learn More</a>
+        </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="small-section">
+        <img src="boating.webp" alt="Sharavathi Backwater Boating">
+        <div class="content">
+            <h2>Sharavathi Backwater Boating</h2>
+            <p>
+                Sharavathi backwater boating is an exciting and scenic activity that takes place in the Sharavathi River backwaters. 
+                Surrounded by dense forests and calm waters, boating here offers visitors a tranquil escape into nature. It is perfect for 
+                adventure enthusiasts and nature lovers who wish to explore the untouched beauty of the region.
+            </p>
+            <a href="#" class="button">Discover Now</a>
+        </div>
+    </div>
+
+    <footer>
+        &copy; shrivatsa
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
